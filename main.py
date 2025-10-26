@@ -23,6 +23,16 @@ canvas = tk.Canvas(width=500,height=500)   #set up the canvas
 canvas.pack()
 
 #functions
+def count_time():
+    global sec
+    if sec>0:
+        sec-=1
+        time_label.config(text=f"Time left:{sec}")
+        window.after(1000,count_time)  #schedule a function to run later, without freezing the interface.
+
+    else:
+        time_label.config(text="Time is up!")
+
 def on_focus_in(event):  #when user clicks entry box delete placeholder
     if entry_box.get() == "type the words here":
         entry_box.delete(0,tk.END)
