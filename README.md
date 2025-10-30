@@ -1,10 +1,10 @@
-🧠 Typing Speed Test
+# 🧠 Typing Speed Test
 
 A simple yet engaging Typing Speed Test built using Python’s Tkinter GUI library.
 This app lets users test their typing speed and accuracy within a 60-second timer.
 Each correctly typed word turns green, while incorrect words turn red, providing instant visual feedback.
 
-🚀 Features
+# 🚀 Features
 
 ⏱ 60-second countdown timer
 
@@ -18,7 +18,7 @@ Each correctly typed word turns green, while incorrect words turn red, providing
 
 🗂 Dynamic random word generation from a text file
 
-🧩 How It Works
+# 🧩 How It Works
 
 When you click or focus on the typing box, the timer starts.
 
@@ -34,13 +34,13 @@ When the timer ends, your WPM and accuracy are displayed.
 
 You can press the Reset button to start again.
 
-🧰 Requirements
+# 🧰 Requirements
 
 Python 3.x
 
 Tkinter (comes preinstalled with Python)
 
-📦 Installation
+# 📦 Installation
 
 # Clone this repository
 git clone https://github.com/<your-username>/typing-speed-test.git
@@ -51,6 +51,4 @@ cd typing-speed-test
 # Run the app
 python typing_test.py
 
-🖼 Preview
 
-![Typing Test Screenshot](screenshot day 86.png)
