@@ -54,6 +54,28 @@ def on_focus_out(event): #when user clicks out of entry box showcase the placeho
         entry_box.insert(0,"type the words here")
         entry_box.config(fg="grey",justify="center")
 
+
+# Check typed words and update new ones if finished
+def get_typed_words():
+    global typed_words
+    typed_text = entry_box.get().strip()
+    typed_words = typed_text.split()
+
+    displayed = words_label.cget("text").split()
+
+    if len(typed_words) >= len(displayed):
+        update_display_words()
+
+#-------GUI SETUP---------
+
+# set up the screen
+window = tk.Tk()
+window.title("Typing Test")
+window.config(padx=50,pady=50,bg=background)
+
+canvas = tk.Canvas(width=500,height=500)   #set up the canvas
+canvas.pack()
+
 #heading
 
 canvas.create_text(250,40,text="TYPING SPEED TEST",font=("Times New Roman",30,"bold"),fill="#70B2B2")
