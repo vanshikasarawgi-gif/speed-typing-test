@@ -42,6 +42,7 @@ def count_time():
 
     else:
         time_label.config(text="Time is up!")
+        get_typed_words()
 
 def on_focus_in(event):  #when user clicks entry box delete placeholder
     if entry_box.get() == "type the words here":
