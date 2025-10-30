@@ -23,6 +23,16 @@ canvas = tk.Canvas(width=500,height=500)   #set up the canvas
 canvas.pack()
 
 #functions
+
+# Function to generate and display new random words
+def update_display_words():
+    global random_words
+    random_words = random.sample(words,15)
+    display_words = " ".join(random_words)
+    words_label.config(text=f"{display_words}")
+    entry_box.delete(0,tk.END)       #clear entry box when new words are shown
+
+# Count-down timer
 def count_time():
     global sec
     if sec>0:
