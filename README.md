@@ -46,9 +46,9 @@ Tkinter (comes preinstalled with Python)
 git clone https://github.com/<your-username>/typing-speed-test.git
 
 # Navigate to the folder
-cd typing-speed-test
+cd speed-typing-test
 
 # Run the app
-python typing_test.py
+python main.py
 
 
