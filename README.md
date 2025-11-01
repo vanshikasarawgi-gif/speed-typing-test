@@ -43,7 +43,7 @@ Tkinter (comes preinstalled with Python)
 # 📦 Installation
 
 # Clone this repository
-git clone https://github.com/<your-username>/typing-speed-test.git
+git clone https://github.com/vanshikasarawgi-gif/speed-typing-test.git
 
 # Navigate to the folder
 cd speed-typing-test
